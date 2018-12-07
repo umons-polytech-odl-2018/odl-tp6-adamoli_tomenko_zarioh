@@ -1,6 +1,5 @@
-public class PizzaHut implements Pizzeria {
+public class PizzaHut extends FactoryPizza {
 
-    public Composant createPizza(String name){
-        return new PizzaComposite(name);
+    public static FactoryPizza getFactory() {
     }
 }
