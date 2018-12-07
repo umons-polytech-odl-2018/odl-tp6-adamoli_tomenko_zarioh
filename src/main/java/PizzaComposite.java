@@ -7,12 +7,14 @@ public class PizzaComposite implements Composant{
     private String name;
     private Collection children;
 
+    public PizzaComposite(){
+
+    }
 
     public PizzaComposite(String name) {
         children = new ArrayList();
         this.name = name;
     }
-
 
     public void add(Composant composant){
 
