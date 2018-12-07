@@ -6,7 +6,7 @@ public class DominoPizza implements Pizzeria{
     public static DominoPizza getInstance() {
         return instance;
     }
-    public PizzaComposite createPizza(){
-        return null;
+    public Composant createPizza(String name){
+        return new PizzaComposite(name);
     }
 }
