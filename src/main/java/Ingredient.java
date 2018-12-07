@@ -1,9 +1,10 @@
-public class FruitsDeMers implements Composant {
+public class Ingredient implements Composant {
     private double prix;
     private String name;
 
-    public FruitsDeMers(double prix) {
+    public Ingredient(String name, double prix) {
         this.prix = prix;
+        this.name = name;
     }
 
     @Override
@@ -14,5 +15,10 @@ public class FruitsDeMers implements Composant {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString(){
+        return "Food{"+"name="+'\''+", price=" + prix+ '}';
     }
 }

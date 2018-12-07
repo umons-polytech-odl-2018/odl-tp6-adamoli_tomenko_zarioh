@@ -6,10 +6,12 @@ public class PizzaComposite implements Composant{
 
     private String name;
     private Collection children;
+    private double prix;
 
     public PizzaComposite(String name) {
         children = new ArrayList();
         this.name = name;
+        prix = 0;
     }
 
 
@@ -25,6 +27,10 @@ public class PizzaComposite implements Composant{
 
     public Iterator getChildren() {
         return children.iterator();
+    }
+
+    protected void setPimp(double prix){
+        this.prix += prix;
     }
 
     @Override
@@ -43,5 +49,10 @@ public class PizzaComposite implements Composant{
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString(){
+        return "pizza: "+name+", prix: " + prix;
     }
 }
