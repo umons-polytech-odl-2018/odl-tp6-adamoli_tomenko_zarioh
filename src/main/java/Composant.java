@@ -1,5 +1,5 @@
 public interface Composant {
 
-    public int getPrize();
+    public double getPrize();
 
 }

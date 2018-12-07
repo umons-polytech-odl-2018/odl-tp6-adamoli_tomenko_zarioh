@@ -26,7 +26,7 @@ public class PizzaComposite implements Composant {
     }
 
     @Override
-    public int getPrize() {
+    public double getPrize() {
         int result = 0;
         for (Iterator i = children.iterator(); i.hasNext(); ) {
             Object objet = i.next();

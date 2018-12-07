@@ -1,7 +1,7 @@
-public class Prosciutto implements Composant {
+public class Olives implements Composant {
     private double prix;
 
-    public Prosciutto(double prix) {
+    public Olives(double prix) {
         this.prix = prix;
     }
 
