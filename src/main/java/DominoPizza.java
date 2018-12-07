@@ -1,4 +1,4 @@
-public class DominoPizza implements AbstratFactory{
+public class DominoPizza implements Pizzeria{
     private static DominoPizza instance=new DominoPizza();
 
     private DominoPizza(){}
