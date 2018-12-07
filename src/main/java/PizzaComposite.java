@@ -4,8 +4,8 @@ import java.util.Iterator;
 
 public class PizzaComposite implements Composant{
 
-    private String name;
-    private Collection ingredients;
+    protected String name;
+    protected Collection ingredients;
 
     public PizzaComposite(){
 
