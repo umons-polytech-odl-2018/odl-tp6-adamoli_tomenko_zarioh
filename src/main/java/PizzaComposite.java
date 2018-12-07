@@ -4,30 +4,30 @@ import java.util.Iterator;
 
 public class PizzaComposite implements Composant{
 
-    private String name;
-    private Collection children;
+    protected String name;
+    protected Collection ingredients;
 
     public PizzaComposite(){
 
     }
 
     public PizzaComposite(String name) {
-        children = new ArrayList();
+        ingredients = new ArrayList();
         this.name = name;
     }
 
     public void add(Composant composant){
 
-        children.add(composant);
+        ingredients.add(composant);
     }
 
 
     public void remove(Composant composant){
-        children.remove(composant);
+        ingredients.remove(composant);
     }
 
-    public Iterator getChildren() {
-        return children.iterator();
+    public Iterator getIngredients() {
+        return ingredients.iterator();
     }
 
     /*protected void setPimp(double prix){
@@ -37,7 +37,7 @@ public class PizzaComposite implements Composant{
     @Override
     public double getPrize() {
         int result = 0;
-        for (Iterator i = children.iterator(); i.hasNext(); ) {
+        for (Iterator i = ingredients.iterator(); i.hasNext(); ) {
             Object objet = i.next();
 
             Composant composant = (Composant)objet;
