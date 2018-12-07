@@ -1,5 +1,6 @@
 public class FruitsDeMers implements Composant {
     private double prix;
+    private String name;
 
     public FruitsDeMers(double prix) {
         this.prix = prix;
@@ -8,5 +9,10 @@ public class FruitsDeMers implements Composant {
     @Override
     public double getPrize() {
         return this.prix;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

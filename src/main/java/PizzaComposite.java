@@ -2,12 +2,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class PizzaComposite implements Composant {
+public class PizzaComposite implements Composant{
 
+    private String name;
     private Collection children;
 
-    public PizzaComposite() {
+    public PizzaComposite(String name) {
         children = new ArrayList();
+        this.name = name;
     }
 
 
@@ -36,5 +38,10 @@ public class PizzaComposite implements Composant {
             result += composant.getPrize();
         }
         return result;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
