@@ -8,13 +8,15 @@ public class PizzaComposite implements Composant{
     private Collection children;
     private double prix;
 
+    public PizzaComposite(){
+
+    }
 
     public PizzaComposite(String name) {
         children = new ArrayList();
         this.name = name;
         prix = 0;
     }
-
 
     public void add(Composant composant){
 
